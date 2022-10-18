@@ -1,12 +1,22 @@
-body {
-  padding: 0.5em; /* 12/24px= 0.5 em*/
-  margin: 0;
-  line-height: 1.75;
-  text-align: center;
-  background-color: beige;
-  color: black;
-} 
-figure {
+  body {
+	padding: 0.5em;
+	margin: auto;
+	line-height: 1.75;
+	text-align: left;
+	background-color: PeachPuff;
+	color: black;
+}	
+
+  #me{
+	padding: 0.5em;
+	margin: auto;
+	line-height: 1.75;
+	text-align: center;
+	background-color: PeachPuff;
+	color: black;
+  }
+
+  figure {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -15,43 +25,54 @@ figure {
     align-content: center
    
   }
+  
   figure:after {
     display: block;
     margin: 10px;
-    flex: 999 999 auto;
+    flex: auto;
 
 }
 
-h1{
+  h1 {
    text-align: center; 
    color: black;
-   background-color: beige;
+   background-color: PeachPuff;
    padding: 1em;
    margin:auto ;
 }
 
-h2 {
-    text-align: center;
+  h2 {
+    text-align: left;
     margin: auto;
-    background-color: beige;
+    background-color: PeachPuff;
     color: purple;
     padding: 1em;
   }
 
   h3 {
-    text-align: center;
+    text-align: left;
     margin: auto;
-    background-color: beige;
+    background-color: PeachPuff;
     color: purple;
     padding: 1em;
   }
 
   h4 {
-    text-align: center;
+    text-align: left;
     margin: auto;
-    background-color: beige;
+    background-color: PeachPuff;
     color: purple;
     padding: 1em;
+  }
+  
+  ul{
+  margin-left: 1em;
+  list-style-type: none;
+}
+
+  #hob{
+  margin-left: 1em;
+  list-style-type: circle; 
   }
   
   nav{
@@ -60,8 +81,7 @@ h2 {
 
   nav ul{
   list-style-type: none;
-  margin: 10px;
-  display: inline-block;
+  margin: 5px;
   }
 
   nav ul li{
@@ -73,12 +93,12 @@ h2 {
   padding: 10px 30px;
   color: black;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.5em;
   text-decoration: none;
   }
   
   nav {
-    background: transparent;
+    background: none;
     color: #FFF;
     height: 35px;
     padding-left: 18px;
@@ -91,16 +111,6 @@ h2 {
     padding: 15px;
     list-style: none
   }
-
-footer{
-  text-align: end;
-}
-
-ul{
-  margin-left: 1em;
-  list-style-type: circle;
-}
-
 
 @media screen and (min-width: 360px) {
   figure{
@@ -120,10 +130,20 @@ ul{
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 500px) {
   figure {
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
+  
+  img{
+	  width:400px;
+	  height:300px;
+  }
+  
+  #vid {
+    width: 400px;
+    height: 250px;
+}
 }
