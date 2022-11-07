@@ -47,7 +47,7 @@
     margin: auto;
     color: purple;
     padding: 1em;
-	float:center;
+	position:center;
   }
 
   h3 {
